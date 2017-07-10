@@ -203,8 +203,6 @@ hr {
 <body>
 <h1>Peer-graded Assignment: Course Project 1</h1>
 
-<h1>Reproducible Research </h1>
-
 <p>In this report the process and results are shown of the analysis of activity 
 monitor data. The data is collected in October and November 2012 of a single 
 subject. Every 5 minute interval the number of steps taken in that interval 
@@ -219,7 +217,7 @@ analysed.</p>
 analysis</li>
 </ol>
 
-<pre><code class="r">activity &lt;- read.csv2(&quot;Activity.csv&quot;, header=TRUE, sep= &quot;,&quot;, fill = TRUE)
+<pre><code class="r">activity &lt;- read.csv2(&quot;activity.csv&quot;, header=TRUE, sep= &quot;,&quot;, fill = TRUE)
 activity$date &lt;- as.Date(as.character(activity$date, format = &quot;%m/%d/%Y&quot;))
 </code></pre>
 
@@ -252,7 +250,7 @@ per day</li>
 stepsDatemedian &lt;- median(stepsDate$steps)
 </code></pre>
 
-<p>The mean number of total steps taken is: 1.0766189 &times; 10<sup>4</sup> and the median of 
+<p>The mean number of total steps taken is: 10766.19 and the median of 
 total steps taken is: 10765.</p>
 
 <p>###What is the average daily activity pattern?</p>
